@@ -1,0 +1,11 @@
+[default]
+workshop = [
+    "450814997",  # CBA
+    "2369477168", # ADT
+    "1940589429", # Just Like The Simulations - The Great War
+]
+presets = []
+dlc = []
+optionals = []
+mission = "AOR_Test.Altis"
+parameters = ["-mod=@INIDBI2"]

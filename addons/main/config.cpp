@@ -10,10 +10,7 @@ class CfgPatches {
             "cba_main"
         };
         units[] = {};
-        weapons[] = {
-            "AOR_Item_base",
-            "AOR_ItemInfo_base"
-        };
+        weapons[] = {"AOR_item_base"};
         VERSION_CONFIG;
     };
 };

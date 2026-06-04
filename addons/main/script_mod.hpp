@@ -1,5 +1,5 @@
-#define MAINPREFIX DA
-#define PREFIX AOR
+#define MAINPREFIX z
+#define PREFIX aor
 #define MOD_NAME Age of Rebellion
 #define AUTHOR "DartRuffian"
 

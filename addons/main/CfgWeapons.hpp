@@ -1,14 +1,11 @@
 class CfgWeapons {
-    class CBA_MiscItem_ItemInfo;
-    class AOR_ItemInfo_base: CBA_MiscItem_ItemInfo {};
-
     class CBA_MiscItem;
+    class CBA_MiscItem_ItemInfo;
     class AOR_Item_base: CBA_MiscItem {
-        SCOPE_PRIVATE;
+        scope = 0;
         author = AUTHOR;
-
         picture = QPATHTOF(data\ui\logo_aor_ca.paa);
 
-        class ItemInfo: AOR_ItemInfo_base {};
+        class ItemInfo: CBA_MiscItem_ItemInfo {};
     };
 };

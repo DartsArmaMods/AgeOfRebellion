@@ -3,7 +3,6 @@
  * Author: DartRuffian
  * Reads a value from the INIDB2 database.
  * Note that INIDBI2 will return false for non-existent value, be mindful when trying to fetch a boolean value from the database.
- * Server execution only.
  *
  * Arguments:
  * 0: The section of the value <STRING>
@@ -14,7 +13,7 @@
  * The key's value, or default value if value does not exist (optional, default: false) <STRING|NUMBER|ARRAY|BOOL>
  *
  * Example:
- * [["meta", "lastLaunched"] call AOR_database_fnc_read
+ * [["meta", "lastLaunched"] call aor_database_fnc_read
  *
  * Public: Yes
  */
@@ -26,13 +25,14 @@ params [
 ];
 TRACE_3("fnc_read",_key,_section,_defaultValue);
 
-if (_section == "" or {_key == ""}) exitWith {};
+if (_section == "" || _key == "") exitWith {};
 
 if !(isServer) exitWith {
     WARNING("fnc_read called from non-server context");
 };
 
-_value = ["read", [_section, _key]] call GVAR(saveData);
+private _value = ["read", [_section, _key]] call GVAR(saveData);
+// isEqualTo since it could be multiple data-types
 if (_value isEqualTo false) then {
     _value = _defaultValue;
 };

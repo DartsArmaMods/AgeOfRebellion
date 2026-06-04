@@ -1,14 +1,33 @@
 # HEMTT
 hemtt/
+hemtt.exe
+.hemtt/missions/~*
 .hemttout/
 releases/
+*.zip
 
-# Development
-references/
-.hemtt/missions/~*
+# Arma
+ArmaScriptCompiler.exe
+*.biprivatekey
+*.pbo
+*.sqfc
 
 # Textures
-Exports/
-*.spp
-*.spp.painter_lock
 *.psd
+
+# Tools
+__pycache__
+tools/output
+.idea
+.venv
+
+# Keys
+.hemttprivatekey
+*.biprivatekey
+
+# Compressed files
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz

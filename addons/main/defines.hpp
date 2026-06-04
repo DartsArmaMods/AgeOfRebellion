@@ -1,13 +1,3 @@
-#define SCOPE_PUBLIC scope = 2; \
-scopeArsenal = 2; \
-scopeCurator = 2
-#define SCOPE_HIDDEN scope = 1; \
-scopeArsenal = 0; \
-scopeCurator = 0
-#define SCOPE_PRIVATE scope = 0; \
-scopeArsenal = 0; \
-scopeCurator = 0
-
 #define DBUG_TEX_RED "#(rgb,8,8,3)color(1,0,0,1)"
 #define DBUG_TEX_GRN "#(rgb,8,8,3)color(0,1,0,1)"
 #define DBUG_TEX_BLU "#(rgb,8,8,3)color(0,0,1,1)"

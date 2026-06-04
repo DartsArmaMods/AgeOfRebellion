@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 ([QUOTE(COMPONENT), "creditCards", [[], []]] call EFUNC(database,read)) params ["_keys", "_values"];
-GVAR(creditCards) = _keys createHashmapFromArray _values;
+GVAR(creditCards) = _keys createHashMapFromArray _values;
 GVAR(nextCreditCardId) = [QUOTE(COMPONENT), "nextCreditCardId", 1] call EFUNC(database,read);
 
 EGVAR(database,savedVariables) append [QGVAR(creditCards), QGVAR(nextCreditCardId)];

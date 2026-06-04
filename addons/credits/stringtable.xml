@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="AOR">
-  <Package name="Credits">
-    <Key ID="STR_AOR_Credits_componentName">
-      <English>Credits</English>
-    </Key>
-    <Key ID="STR_AOR_Credits_defaultBalanceSetting">
-      <English>Default Balance</English>
-    </Key>
-    <Key ID="STR_AOR_Credits_defaultBalanceTooltip">
-      <English>The default balance for new players and untracked credit cards</English>
-    </Key>
-    <Key ID="STR_AOR_Credits_item_CreditCard_name">
-      <English>Credit Card</English>
-    </Key>
-    <Key ID="STR_AOR_Credits_item_CreditCardOwned_name">
-      <English>Credit Card (Owned)</English>
-    </Key>
-    <Key ID="STR_AOR_Credits_CreditCardOwned_inspect">
-      <English>Inspect</English>
-    </Key>
-    <Key ID="STR_AOR_Credits_CreditCardOwned_inspectTooltip">
-      <English>Owner: %1\nBalance: %2\nCard Id: %3</English>
-    </Key>
-  </Package>
+<Project name="aor">
+    <Package name="credits">
+        <Key ID="STR_aor_credits_componentName">
+            <English>Credits</English>
+        </Key>
+        <Key ID="STR_aor_credits_creditCard_displayName">
+            <English>Credit Card</English>
+        </Key>
+        <Key ID="STR_aor_credits_defaultBalanceSetting">
+            <English>Default Balance</English>
+        </Key>
+        <Key ID="STR_aor_credits_defaultBalanceTooltip">
+            <English>The default balance for new players and untracked credit cards</English>
+        </Key>
+        <Key ID="STR_aor_credits_inspectCard">
+            <English>Inspect</English>
+        </Key>
+        <Key ID="STR_aor_credits_inspectCard_tooltip">
+            <English>Owner: %1\nBalance: %2\nCard Id: %3</English>
+        </Key>
+    </Package>
 </Project>

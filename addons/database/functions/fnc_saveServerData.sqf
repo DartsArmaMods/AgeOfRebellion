@@ -2,16 +2,15 @@
 /*
  * Author: DartRuffian
  * Saves data from the mission namespace to the database.
- * Server execution only.
  *
  * Arguments:
  * None
  *
  * Return Value:
- * Description <TYPE>
+ * None
  *
  * Example:
- * [] call AOR_database_fnc_saveServerData;
+ * [] call aor_database_fnc_saveServerData;
  *
  * Public: No
  */
@@ -26,7 +25,7 @@ INFO("Saving mission data");
     private _value = missionNamespace getVariable _x;
     (_x splitString "_") params ["", "_section", "_key"];
 
-    if (_value isEqualType createHashmap) then {
+    if (_value isEqualType createHashMap) then {
         _value = toArray _value;
     };
     [_section, _key, _value] call FUNC(write);

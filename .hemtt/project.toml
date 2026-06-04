@@ -1,7 +1,7 @@
 name = "Age of Rebellion"
 author = "DartRuffian"
-prefix = "AOR"
-mainprefix = "DA"
+prefix = "aor"
+mainprefix = "z"
 
 [version]
 path = "addons/main/script_version.hpp"
@@ -13,16 +13,4 @@ exclude = ["*.spp", "*.spp.painter_lock", "*.psd", "fnc_empty.sqf"]
 
 [properties]
 author = "DartRuffian"
-url = "https://github.com/Dart-Armory/Age-of-Rebellion"
-
-[hemtt.launch.default]
-workshop = [
-    "450814997",  # CBA
-    "2369477168", # ADT
-    "1940589429", # Just Like The Simulations - The Great War
-]
-presets = []
-dlc = []
-optionals = []
-mission = "AOR_Test.Altis"
-parameters = ["-mod=@INIDBI2"]
+url = "https://github.com/DartsArmaMods/AgeOfRebellion"

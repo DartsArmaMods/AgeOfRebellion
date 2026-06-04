@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="AOR">
-  <Package name="Main">
-    <Key ID="STR_AOR_Main_modName">
-      <English>Age of Rebellion</English>
-    </Key>
-    <Key ID="STR_AOR_Main_componentName">
-      <English>Main</English>
-    </Key>
-  </Package>
+<Project name="aor">
+    <Package name="main">
+        <Key ID="STR_aor_main_componentName">
+            <English>Main</English>
+        </Key>
+        <Key ID="STR_aor_main_modName">
+            <English>Age of Rebellion</English>
+        </Key>
+    </Package>
 </Project>

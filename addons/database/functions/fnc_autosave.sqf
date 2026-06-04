@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [] call AOR_database_fnc_autosave
+ * [] call aor_database_fnc_autosave
  *
  * Public: No
  */

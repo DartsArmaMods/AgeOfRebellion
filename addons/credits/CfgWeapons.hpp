@@ -1,16 +1,16 @@
-#define CREDITCARD_ITEM(ID) class DOUBLES(AOR_item_CreditCard,ID): AOR_item_CreditCard { \
-    displayName = CSTRING(item_CreditCardOwned_name); \
+#define CREDITCARD_ITEM(ID) class DOUBLES(AOR_CreditCard,ID): AOR_CreditCard { \
     scope = 1; \
     scopeArsenal = 0; \
-    scopeCurator = 0; \
+    author = AUTHOR; \
     GVAR(cardId) = ID; \
 }
 
 class CfgWeapons {
-    class AOR_Item_base;
-    class AOR_item_CreditCard: AOR_Item_base {
-        SCOPE_PUBLIC;
-        displayName = CSTRING(item_CreditCard_name);
+    class AOR_item_base;
+    class AOR_CreditCard: AOR_item_base {
+        scope = 2;
+        author = AUTHOR;
+        displayName = CSTRING(creditCard_displayName);
         descriptionShort = "$STR_JLTS_C_descs_CreditCard";
         model = "\MRC\JLTS\contraband\Credits\credit_card.p3d";
         picture = "\MRC\JLTS\contraband\Credits\data\ui\credit_card_ui_ca.paa";
